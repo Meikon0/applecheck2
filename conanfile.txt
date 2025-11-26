@@ -1,0 +1,31 @@
+[requires]
+qt/5.15.10
+opencv/4.9.0
+ncnn/20240410
+mlpack/4.4.0
+tensorflow-lite/2.14.0
+
+[generators]
+cmake
+cmake_find_package
+
+[options]
+qt:shared=True
+opencv:dnn=False
+opencv:contrib=False
+opencv:with_qt=True
+mlpack:shared=True
+mlpack:USE_OPENMP=True
+ncnn:shared=True
+
+[tool_requires]
+cmake/3.27.7
+
+[layout]
+cmake_layout
+
+[imports]
+# Aurora SDK uses RPM packaging; artifacts placed in ./_deploy for SDK bundling
+bin, *.so* -> ./_deploy/bin
+lib, *.so* -> ./_deploy/lib
+res, * -> ./_deploy/res
