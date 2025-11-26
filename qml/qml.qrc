@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>main.qml</file>
+        <file>pages/HomePage.qml</file>
+        <file>pages/TrainingPage.qml</file>
+        <file>pages/ResultDialog.qml</file>
+        <file>components/ImagePreview.qml</file>
+        <file>components/BottomBar.qml</file>
+    </qresource>
+    <qresource prefix="/res">
+        <file alias="icons/apple_good.png">../res/icons/apple_good.png</file>
+        <file alias="icons/apple_bad.png">../res/icons/apple_bad.png</file>
+        <file alias="icons/not_apple.png">../res/icons/not_apple.png</file>
+    </qresource>
+</RCC>
